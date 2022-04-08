@@ -3,7 +3,7 @@ let espAltura = 20;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(10);
+  background(0);
   stroke(255);
   strokeWeight(2);
   noFill();
@@ -16,62 +16,61 @@ function draw() {
     for (let j = 1; j < espAltura; j++) {
       push();
       translate(i * width / espLarg, j * height / espAltura)
-      translate(30-40)
-      scale(0,16);
-      
+      translate(-55,-45)
+      scale(0.13);
       noStroke();
-
+     
+      
 fill(222,184,135);
-rect(80, 180, 240, 40, 50); //orelhas 1
-  
- fill(209,135,82);
-rect(90, 190, 220, 20, 50); //orelhas 2
+rect(80, 180, 240, 40, 50); 
+fill(209,135,82);
+rect(90, 190, 220, 20, 50); 
 fill(222,184,135);
-rect(170, 270, 55, 55, 20); //pescoço
+rect(170, 270, 55, 55, 20); 
 circle(200, 200, 200);    
 fill(220,220,220);
-circle(155, 180, 40); //olho
-circle(238, 180, 40); //olho
+circle(155, 180, 40); 
+circle(238, 180, 40); 
 fill(0,0,0);
-circle(155, 180, 20); //pupila
-circle(238, 180, 20); //pupila
+circle(155, 180, 20); 
+circle(238, 180, 20); 
 fill(160,82,45)
 arc(198,225, 80, 80, 0, PI, CHORD);
 fill(209,135,82) 
-square(180, 180, 33, 45, 64,10, 9); //nariz
+square(180, 180, 33, 45, 64,10, 9); 
 fill (229, 57, 53)
-rect(110, 310, 180, 295, 40); //corpo
+rect(110, 310, 180, 295, 40); 
 
 fill (192,192,192)
-rect(110, 470, 180, 140, 10); //short  
+rect(110, 470, 180, 140, 10); 
 
 fill(0,0,0)
-  rect(110,470,180,10); //cinto
+  rect(110,470,180,10); 
 
   fill (222,184,135)
-  rect(75, 360, 30, 120, 30); //braço esq
-  rect(295, 360, 30, 120, 30); //braço direito
+  rect(75, 360, 30, 120, 30); 
+  rect(295, 360, 30, 120, 30); 
   fill (229, 57, 53)
-  rect(60, 310, 280, 70, 30); //ombros
+  rect(60, 310, 280, 70, 30); 
 
 fill(222,184,135)
-arc(198,310, 100, 90, 0, PI, CHORD); //peito
+arc(198,310, 100, 90, 0, PI, CHORD); 
 
 fill (0,0,0)
-rect(195, 475, 4, 135, 0); //linha calçoes
+rect(195, 475, 4, 135, 0); 
 
 fill(255,255,255)
-rect (171,225,55,5,1); //dente
+rect (171,225,55,5,1); 
 
 fill(160,82,45);
  
-arc(195, 90, 80, 80, 12, PI + QUARTER_PI, PIE); //cabelo esq
-  arc(165, 90, 80, 80, 12, PI + QUARTER_PI, PIE); //cabelo meio
-arc(230, 90, 80, 80, 12, PI + QUARTER_PI, PIE); //cabelo direito
+arc(195, 90, 80, 80, 12, PI + QUARTER_PI, PIE); 
+  arc(165, 90, 80, 80, 12, PI + QUARTER_PI, PIE); 
+arc(230, 90, 80, 80, 12, PI + QUARTER_PI, PIE); 
 
 fill (0,0,0); 
-ellipse(246,610, 90, 45); //pe esq
-ellipse(152,610, 90, 45); //pe dire
+ellipse(246,610, 90, 45); 
+ellipse(152,610, 90, 45); 
 
       pop();
     }
